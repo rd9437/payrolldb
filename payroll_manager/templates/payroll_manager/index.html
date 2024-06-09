@@ -1,0 +1,21 @@
+{% extends 'payroll_manager/base.html' %}
+{% block content %}
+{% if messages %}
+<div class="container mt-4">
+    {% for message in messages %}
+    <div class="alert alert-danger{{ message.tags }}">{{ message }}</div>
+    {% endfor %}
+</div>
+{% endif %}
+
+<div class="jumbotron text-center text-white">
+    <div style="background-color: rgba(0, 0, 0, 0.5); position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></div>
+    <div style="position: relative; z-index: 1;">
+        <h1 class="display-4">Welcome to Emp Manager!</h1>
+        <p class="lead">Login as admin or employee</p>
+        <hr class="my-4">
+        <a class="btn btn-primary btn-lg mr-2" href="{% url 'admin_login' %}" role="button">Admin</a>
+        <a class="btn btn-secondary btn-lg" href="{% url 'employee_login' %}" role="button">Employee</a>
+    </div>
+</div>
+{% endblock %}
