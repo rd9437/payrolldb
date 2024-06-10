@@ -1,7 +1,5 @@
 # Payrolldb
 
-# Payroll-Service-Development
-
 The project Payroll Management System by using  Django, Python and MySQL. Payroll Management System is an important activity in any organization or company. The main purpose for developing this project Payroll Management System is to managing employee’s information of organization or company.
 
 ## Features
